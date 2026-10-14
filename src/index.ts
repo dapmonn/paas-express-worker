@@ -17,6 +17,14 @@ app.get("/api/status", (req, res) => {
     platform: "Cloudflare Workers"
   });
 });
+  
+app.get("/api/info", (req, res) => {
+  res.json({
+    framework: "Express",
+    runtime: "Cloudflare Workers",
+    course: "Platform as a Service"
+  });
+});
 
 app.listen(3000);
 
